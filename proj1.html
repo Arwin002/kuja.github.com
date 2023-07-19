@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html alng="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UACompatible"content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>PortFolio</title>
+        <link rel="stylesheet" href="proj1style.css">
+
+    </head>
+<body>
+
+    <!-----------------HEAD-----------------> 
+
+    <div id="head">
+    </div>
+    <div class="head">
+        <nav>
+            <p class="head-text"><span class="head-span">Port</span>Folio</p>
+            <ul>
+                <li><a href="images/Vincent's Resume.pdf" download class="btn">Download CV</a></li>
+                <li> <a href="#head">Home</a></li>
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#hobby">Hobby</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+    </div>
+
+    <header>     
+<div id="header">
+    <div class="container">
+           <div class="header-text">
+                <h1>
+                    Hello <br> My Name is <span class="span-name">Arwin Collantes</span>
+                </h1>    
+                <h2>I am a Front-End Web Developer</h2>
+            </div>
+            <div> <img src="images/arwin2.png" class="headerimage"> </div> 
+   </div>
+ </div>
+</header>
+</div>
+
+<!------------ABOUT----------------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="images/arwin3.jpg">
+            </div>
+                <div class="about-col-1">
+                <h1 class="Sub-title">About Me</h1>
+                <p>Hi! My name is <span class="span-name">Vincent Arwin Collantes</span>, you can call me Arwin. I'm an IT graduate from STI-Orca.
+                    To start-off one of the personal projects I got to work with before, was creating a mobile language learning tool for students, which essentially is for helping the user learn a certain language. Mandarin specifically. </p>
+                    <br>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab ('Wonderin')">Projects</p>
+                    <p class="tab-links" onclick="opentab ('Skills')">Skills</p> 
+                    <p class="tab-links" onclick="opentab ('Education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Wonderin">
+                    <ul>
+                        <li>Wonderin: An Mobile learning tool for teaching basic Mandarin</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Skills">
+                    <ul>
+                        <li>Computer Network </li>
+                        <br>
+                        <li>Computer Hardware </li>
+                        <br>
+                        <li>Android Studio</li>
+                        <br>
+                        <li>Visual Studio </li>
+                        <br>
+                        <li>Web Development</li>
+                        <br>
+                        <li>MYSQL</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li>2011-2015 (HighSchool) <br> Casimiro A. Ynares Senior Memorial National High School</li>
+                        <br>
+                        <li>2016-2020 (College) <br> STI-Ortigas Cainta</li>
+                    </ul>
+                </div>
+
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<!------------INFO--------------->
+
+<div id="hobby">
+    <div class="container2">
+        <h4>  My Hobbies  </h4>
+        <div class="hobbies-list">
+            <div class="hobbies">
+            <img src="images/pic1.jpg" >
+            <div class="layer">
+                <ion-icon name="camera-outline" class="ion-icon"></ion-icon>
+                <h3>Photography</h3>
+             <p> I Like taking pictures of other people and edit it for better quality </p>
+            </div>
+            </div>
+            <div class="hobbies">
+                <img src="images/pic2.jpg" >
+                <div class="layer">
+                    <ion-icon name="game-controller-outline" class="ion-icon"></ion-icon>
+                    <h3>Playing Games</h3>
+                <p> I Like playing Games like valorant and League of Legends to relieve stress </p>
+                </div>
+            </div>
+            <div class="hobbies">
+                <img src="images/pic3.jpg">
+                <div class="layer">
+                    <ion-icon name="logo-html5" class="ion-icon"></ion-icon>
+                    <h3>Coding</h3>
+                <p> Recently i had interest in coding and make it my hobby and learn how to code </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+<!--------------------Projects---------------------------------->
+
+<div id="Projects">
+    <div class="container2">
+        <h1 class="Sub-title">My Projects</h1>
+        <div class="Proj-list">
+            <div class="Proj">
+                <img src="images/login.png">
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+
+
+<footer class="footer">
+    <p>Contacts:</p>
+    <div class="footer-wraper">
+          <div class="candy">
+            <p>Social Media</p>
+            <div>
+                <a href= https://www.facebook.com/profile.php?viewas=100000686899395&id=100088338033073 target="_blank">
+                <ion-icon name="logo-facebook" class="logo">facebook</ion-icon>
+              </a>
+              <a href="https://www.instagram.com/xvncnt02/?igshid=ZmZhODViOGI%3D" target="_blank">
+                <ion-icon name="logo-instagram" class="logo">instagram</ion-icon>
+                </a>
+            </div>
+         </div>
+        <div>
+            <ion-icon name="mail-open-outline"></ion-icon>
+            <p>collantes.arwin02@gmail.com</p>
+        </div> 
+        <div>
+            <ion-icon name="call-outline"></ion-icon>
+            <p>09473438708</p>
+        </div> 
+    </div>
+</footer>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName ("tab-links");
+    var tabcontents = document.getElementsByClassName ("tab-contents");
+
+    function opentab(tabname){
+        
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
